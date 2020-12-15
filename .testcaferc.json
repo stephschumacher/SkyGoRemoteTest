@@ -1,0 +1,15 @@
+{
+    "browsers": "chrome -incognito",
+    "src": "tests/",
+    "screenshots": {
+        "path": "reports/screenshots",
+        "takeOnFails": true,
+        "pathPattern": "${DATE}/${DATE}_${TIME}_${FIXTURE}_${TEST}.png"
+    },
+    "debugOnFail": false,
+    "skipJsErrors": true,
+    "selectorTimeout": 10000,
+    "assertionTimeout": 3000,
+    "pageLoadTimeout": 3000,
+    "speed": 1
+}

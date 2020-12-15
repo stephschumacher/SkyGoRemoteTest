@@ -1,0 +1,23 @@
+{
+  "name": "skygoremotetest",
+  "version": "1.0.0",
+  "description": "Sky.com functional test pack",
+  "scripts": {
+    "testcafe": "testcafe",
+    "testcafe:report": "testcafe --reporter html:reports/testreport.html -s takeOnFails=true",
+    "headless": "testcafe \"chrome:headless -incognito\"",
+    "headless:report": "testcafe \"chrome:headless -incognito\" --reporter html:reports/testreport.html -s takeOnFails=true",
+    "prettier": "npx prettier --write ."
+  },
+  "pre-commit": [
+    "prettier",
+    "unittests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "cli-color": "1.4.0",
+    "prettier": "2.0.5",
+    "testcafe": "^1.9.0",
+    "testcafe-reporter-html": "1.4.6"
+  }
+}
