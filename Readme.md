@@ -10,6 +10,12 @@ Date: 14/12/2020
 
 ## Setup
 
+Ensure you have the latest version of node:
+
+> `brew update`
+
+> `brew upgrade node`
+
 In the base directory type the following to install everything you need:
 
 > `npm install`
